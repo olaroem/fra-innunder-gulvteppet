@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Working Title</title>
+    <link rel="stylesheet" href="Style1.css">
+</head>
+<body>
+
+    <div id="header-placeholder"></div>
+
+    <main>
+        <h2>Extra</h2>
+        <p>Extra</p>
+    </main>
+
+
+    <script>
+        fetch("AAheader.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("header-placeholder").innerHTML = data;
+            });
+    </script>
+    
+</body>
+</html>

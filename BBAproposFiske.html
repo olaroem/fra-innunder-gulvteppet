@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Working Title</title>
+    <link rel="stylesheet" href="Style1.css">
+</head>
+<body>
+
+    <div id="header-placeholder"></div>
+
+
+
+    <main>
+        <h2>Apropos Fiske</h2>
+
+        <p>
+           Annet enn et vak, er det ingen tegn til at det er noe annet levende vesen I nærheten. Elva forran meg har spist seg inn I myraenga på andre sida, slik at kanten på gressdekket nærmest velter over det duvende fjellvannet og den eksponerte torven gir en mørk bakgrunn for de snødekte toppene som speiler seg I overflaten. Tross det klare vannet blir det umulig å si hva som skjuler seg rett under vannspeilet. Med unntak av et vak: Det er som om noe streifer vannhinna unnenfra, overflaten brytes aldri og det eneste sporet som er igjenn av skapningen der nede er et sett ekspanderende ringer som driver med elva og forsvinner i strømmen. 
+        </p>
+
+        <p>
+            Når er det egentlig man trer inn i naturen? Hvor krysser man den grensa? Det er forsåvidt en merkbar overgang I det jeg slenger på meg rammesekken, låser bilen og følger stien innover fjelldalen. Er det selvbetjente DNT hytter som representerer siste skanse? Der du tar av fra stien? Er den kanskje diffus og flyktig, som om den har vært her en gang. Istad for eksempel?
+        </p>   
+        
+        <p>
+            Her, på huk i en liten sidedal, ved en anonym meandersving, vis-a-vie en navnløs myr, omhyllet av mygg, knott og en og annen døgnflue, føles pirrende nærme. Som om skillet mellom mann og uobservert natur akkurat nå har spent seg som en membran over elvebreddene. Nå gjelder det å puste med kjeften...
+        </p>
+
+    </main>
+
+    <script>
+        fetch("AAheader.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("header-placeholder").innerHTML = data;
+            });
+    </script>
+
+</body>
+</html>

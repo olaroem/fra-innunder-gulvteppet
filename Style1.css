@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 28px;
+}
+
+/* Navigation menu */
+nav {
+    background-color: #555;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+}
+
+nav a:hover {
+    background-color: #777;
+}
+
+
+/* Page content */
+main {
+    padding: 20px;    
+    max-width: 400px;
+    margin: 0 auto;   /* centers the content */
+}
+
+.article-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 4px;   /* optional */
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Working Title</title>
+    <link rel="stylesheet" href="Style1.css">
+</head>
+<body>
+
+
+    <div id="header-placeholder"></div>
+
+
+
+    <main>
+        <h2>Texts</h2>
+
+        <ul>
+            <li><a href="BBAproposFiske.html">Apropos Fiske</a></li>
+            <li><a href="BBFarvel.html">Farvel</a></li>
+            <li><a href="BBLyng.html">Lyng</a></li>
+            <li><a href="BBSammeksistens.html">Om Sameksistens</a></li>
+
+        </ul>
+
+    </main>
+
+    <script>
+        fetch("AAheader.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("header-placeholder").innerHTML = data;
+            });
+    </script>
+
+</body>
+</html>

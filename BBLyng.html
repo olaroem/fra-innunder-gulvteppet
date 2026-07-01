@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Working Title</title>
+    <link rel="stylesheet" href="Style1.css">
+</head>
+<body>
+
+    <div id="header-placeholder"></div>
+
+
+
+    <main>
+        <h2>Lyng</h2>
+
+        <p>
+           Det er noe med fjellyng som får meg til å ville ligge sidelengs. Gress er for vått, snøen for kald og steiner er for harde. Lyngen blir som en lun oase blant steder jeg ikke har behov for å slå meg ned. Inne blandt virrvarret av planter som skulle ønske de var trær tusler det alltid et tullete lite insekt i en eller annen hinsides farge, som lime-grønn, eller noen oransj. Det er noe med fjellyng som får meg til å ville ligge sidelengs.
+        </p>
+
+    </main>
+
+    <script>
+        fetch("AAheader.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("header-placeholder").innerHTML = data;
+            });
+    </script>
+
+</body>
+</html>
