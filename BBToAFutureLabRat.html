@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Working Title</title>
+    <link rel="stylesheet" href="Style1.css">
+</head>
+<body>
+
+    <div id="header-placeholder"></div>
+
+
+
+    <main>
+        <h2>To A Future Lab Rat</h2>
+
+        <p>
+          You are now entering the lair of the recirculating water channel in Strømningslabben here at Gløshaugen; a 20 meter long 50 ton machinery capable of reproducing conditions similar to those of the open ocean. 
+        </p>
+      
+        <p>
+          Many a late night has been spent in her company and although we do not communicate in words, the stoic, humming beast we colloquially call a water channel, I will go so far as to call a friend. I don't know about you, but to me she has come to represent the duality of lab work: The tension in acquiring the first proper measurement in a campaign contrasted with the joy of seeing your crazy setup actually work. The finesse of capturing stereoscopic velocity fields by shooting lasers contrasted with the grunt work of scrubbing algae of the walls. What PhD will be her next victim? What future joy and frustration will she experience with complete strangers? Will they treat her properly? If after many years we meet again, will she remember me, like an old stray dog reuniting with her owner? 
+        </p>
+      
+        <p>
+          These are things that cross one's mind at the end of a long companionship. One day it might be you. One day you might be one of very few people in this world who actually knows her quirks and preferences. To me she is just a friend I now thank for the time we spent bothering each other. But to you? Maybe it's more like sending your kids off to college? Like breaking up with a partner you once knew well, but now realize that you have grown apart? Or maybe you are just one of those sane persons, who takes her for what she actually is; an overpriced, recirculating mixer.
+        </p>
+      
+        <p>
+          Regardless, I hope you come to the conclusion that the only proper way is to leave her in a state where she has the capacity to frustrate any rodent that happens to travel through.
+        </p>
+      
+        <p> 
+          Regards,
+        </p>
+        
+        <p>
+          A former lab rat
+        </p>
+
+    </main>
+
+    <script>
+        fetch("AAheader.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("header-placeholder").innerHTML = data;
+            });
+    </script>
+
+</body>
+</html>
