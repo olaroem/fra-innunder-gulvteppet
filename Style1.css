@@ -45,3 +45,13 @@ main {
     margin: 20px auto;
     border-radius: 4px;   /* optional */
 }
+
+.image-row {
+    display: flex;
+    gap: 10px;
+}
+
+.image-row .article-image {
+    width: 50%;
+    margin: 0;
+}
