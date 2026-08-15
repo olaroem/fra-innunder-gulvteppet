@@ -1,1 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gulvteppet::Sommerhobbyen</title>
+    <link rel="stylesheet" href="Style1.css">
+</head>
+<body>
 
+    <div id="header-placeholder"></div>
+
+
+
+    <main>
+        <h2>Bringebærbusk</h2>
+
+
+        
+        <p> 
+          Nedenfor postkassa, i krysset der du tar av til snarveien, vokser bringebærbuskene i veikanten. Liggende på ryggen er det lettere å se den rosa tanngarden, buskene som barder. Jeg sitter i kjeften, her i villniset, blandt muld og tistler er jeg en gris.
+        </p>
+        
+
+        <img src="images/Gris.jpg"
+            alt="I gapet"
+            class="article-image">
+        
+
+
+    </main>
+
+    <script>
+        fetch("AAheader.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("header-placeholder").innerHTML = data;
+            });
+    </script>
+
+</body>
+</html>
